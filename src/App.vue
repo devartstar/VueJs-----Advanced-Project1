@@ -1,18 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!--
+    <header class="top-bar spread">
+      <nav class="top-bar-nav">
+        <router-link href="#" class="top-bar-link">
+          <i class="icofont-spoon-and-fork"></i>
+          <span>Home</span>
+        </router-link>
+        <router-link href="views/products.html" class="top-bar-link">
+          <span>Products</span>
+        </router-link>
+        <router-link href="views/past-orders.html" class="top-bar-link">
+          <span>Past Orders</span>
+        </router-link>
+      </nav>
+      <router-link @click="toggleSidebar" class="top-bar-cart-link">
+        <i class="icofont-cart-alt icofont-1x"></i>
+        <span>Cart ({{ totalQuantity }})</span>
+      </router-link>
+    </header>
+    -->
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+    </div>
+  <router-view />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
