@@ -17,13 +17,6 @@
         <span>Cart ({{ totalQuantity }})</span>
       </router-link> -->
     </header>
-
-
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </div>
-
   <router-view />
 </template>
 
