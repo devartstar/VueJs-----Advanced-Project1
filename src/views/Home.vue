@@ -59,7 +59,7 @@
 
 export default {
   name: "Home-page",
-  props: ['inventory'],
+  props: ['inventory', 'addToCart'],
   components: {
   },
 };

@@ -19,9 +19,10 @@
   </header>
   <router-view 
     :inventory="inventory"
+    :addToCart="addToCart"
   />
 
-  <Sidebar 
+  <Sidebar  
       v-if="showSidebar"
       :toggle="toggleSidebar"
       :cart="cart"
